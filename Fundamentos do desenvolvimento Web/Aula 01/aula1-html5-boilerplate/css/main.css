@@ -1,0 +1,130 @@
+body {
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-weight: normal;
+  margin: 1em 0 0 1px;
+  border-left: .5em solid purple;
+  padding: 0.5em 0 0.5em 3px;
+  background-color: #efe9f3
+}
+
+h2 {
+  margin: 2em 0 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+section {
+  color: #0c2a44
+}
+
+p {
+  line-height: 1.5;
+}
+
+p:first-of-type::first-letter {
+  font-size: 4em;
+  font-weight: bold;
+  line-height: 1em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.citacao {
+  margin: 1em 2em 1em 4em;
+  line-height: 2;
+  font-style: italic;
+  text-align: justify;
+  font-size: 0.9em;
+  text-transform: uppercase;
+}
+
+.citacao::before, .citacao::after {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+.citacao::before {
+  content: '“';
+  vertical-align: text-bottom;
+}
+
+.citacao::after {
+  content: '”';
+  vertical-align: text-top;
+}
+
+#titulo-principal {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.misterio {
+  text-transform: capitalize;
+  text-shadow: 0.1em 0.1em 0.1em rgb(0, 0, 0, 0.35)!important;
+
+}
+
+.misterio.verde {
+  color: #538606;
+}
+
+.misterio:hover {
+  color: #b71919;
+}
+
+[id="titulo-principal"] {
+  text-shadow: 0.1em 0.1em 0.1em #8000806e;
+  font-weight: normal;
+}
+
+span {
+  background-color: #f3e9f0;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 2px solid salmon;
+}
+
+div {
+  background-color: #eef3e9;
+  padding: 0.5em;
+  margin: 0.5em;
+  border: 2px dotted salmon;
+}
+
+.bloco-em-linha {
+  display: inline-block;
+}
+
+.container-flex {
+  background-color: blanchedalmond;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container-flex aside {
+  flex: 20em;
+  flex-grow: 1;
+}
+
+.container-flex main {
+  flex: 30em;
+  flex-grow: 10;
+}
+
+@media screen and (max-width: 800px) {
+  .container-flex {
+    display: block;
+  }
+}
+
+@media print {
+  .container-flex {
+    display: block;
+  }
+
+  aside {
+    display: none;
+  }
+}

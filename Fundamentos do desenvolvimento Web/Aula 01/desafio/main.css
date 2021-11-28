@@ -1,0 +1,67 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+}
+
+header, footer {
+  flex-grow: 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+nav, aside {
+  flex: 1em;
+  flex-grow: 1;
+  padding: 1em;
+}
+
+main {
+  padding: 1em;
+  flex: 1em;
+  flex-grow: 7;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.blue {
+  background-color: lightblue;
+}
+
+.content {
+  background-color: lightgrey;
+  text-align: justify;
+}
+
+@media screen and (max-width: 800px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  aside {
+    order: 3;
+  }
+  nav {
+    order: 4;
+  }
+}
