@@ -11,234 +11,154 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
-
-  <div style="margin: 10px 0">
-
-    <hr />
-
-    <div class="container">
-
-      <div class="row">
-        <div
-          class="col-12 col-md-4 col-xl-2 p-1 pt-3 p-md-2 text-left text-md-right bg-primary text-white font-weight-bold">
-          LABEL:
-        </div>
-        <div class="col-12 col-md-8 col-xl-4 p-1 pb-3 p-md-2 text-left bg-secondary text-white font-italic">
-          Valor do campo
-        </div>
-        <div
-          class="col-12 col-md-4 col-xl-2 p-1 pt-3 p-md-2 text-left text-md-right bg-success text-white font-weight-bold">
-          LABEL:
-        </div>
-        <div class="col-12 col-md-8 col-xl-4 p-1 pb-3 p-md-2 text-left bg-info text-white font-italic">
-          Valor do campo
-        </div>
+  <div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">Logo</a>
+      <div id="navbarPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Item 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Item 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Item 3</a>
+          </li>
+        </ul>
       </div>
-
-    </div>
-
-    <hr />
-
-    <div class="container">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col bg-primary">
-            Coluna A1
-          </div>
-          <div class="col bg-secondary">
-            Coluna A2
-          </div>
-          <div class="col bg-success">
-            Coluna A3
+    </nav>
+    <div class="d-flex flex-column flex-md-row flex-grow-1">
+      <main class="flex-grow-1">
+        <div class="jumbotron">
+          <h1 class="display-4">Hello, world!</h1>
+          <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+          <hr class="my-4">
+          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+          <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+        <div class="container">
+          <h2>
+            Título de segundo nível
+          </h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam ratione velit neque magni quisquam nihil
+            placeat, quasi exercitationem incidunt. Officiis voluptatem repudiandae obcaecati totam reprehenderit autem,
+            dignissimos nemo molestias quod?
+          </p>
+          <div class="alert alert-warning" role="alert">
+            <strong>A simple</strong> warning alert—check it out!
           </div>
         </div>
-
         <hr />
-
-        <div class="row">
-          <div class="col-4 bg-primary">
-            Coluna B1
-          </div>
-          <div class="col-8 bg-secondary">
-            Coluna B2
-          </div>
-          <div class="col-6 bg-success">
-            Coluna B3
-          </div>
-          <div class="col-5 bg-danger">
-            Coluna B4
-          </div>
-          <div class="col-5 offset-1 bg-primary">
-            Coluna B5
-          </div>
-          <div class="col-5 bg-secondary">
-            Coluna B6
-          </div>
+        <div class="container">
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-warning">Warning</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-light">Light</span>
+          <span class="badge badge-dark">Dark</span>
         </div>
-
         <hr />
+        <div class="container">
 
-        <div class="row">
-          <div class="col-4 col-lg-2 bg-primary">
-            Coluna C1
-          </div>
-          <div class="col-8 col-lg-4 bg-secondary">
-            Coluna C2
-          </div>
-          <div class="col-6 bg-success text-right text-lg-left">
-            Coluna C3
-          </div>
-          <div class="col-6 col-lg-5 bg-danger">
-            Coluna C4
-          </div>
-          <div class="col-5 col-lg-7 offset-1 offset-lg-0 bg-primary text-right text-lg-left">
-            Coluna C5
-          </div>
-          <div class="col-5 bg-secondary">
-            Coluna C6
-          </div>
-          <div class="col-12 col-lg-7 bg-warning">
-            Coluna C7
+          <button type="button" class="btn btn-success">
+            Profile <span class="badge badge-primary">1</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+          <button type="button" class="btn btn-danger">
+            Profile <span class="badge badge-secondary">2</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-success">3</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-danger">4</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-warning">5</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-info">6</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-light">7</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+          <button type="button" class="btn btn-primary">
+            Profile <span class="badge badge-dark">8</span>
+            <span class="sr-only">unread messages</span>
+          </button>
+        </div>
+        <hr />
+        <div class="container">
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-secondary">Secondary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-light">Light</button>
+          <button type="button" class="btn btn-dark">Dark</button>
+        </div>
+        <hr />
+        <div class="container">
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+          <button type="button" class="btn btn-outline-success">Success</button>
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+          <button type="button" class="btn btn-outline-info">Info</button>
+          <button type="button" class="btn btn-outline-light">Light</button>
+          <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="list-group">
+            <a href="/fundamentos.html" class="list-group-item list-group-item-action active" aria-current="true">
+              The current link item
+            </a>
+            <a href="/holy-grail.html" class="list-group-item list-group-item-action">A second link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+            <a class="list-group-item list-group-item-action disabled">A disabled link item</a>
           </div>
         </div>
-
-      </div>
-
+        <hr />
+        <button type="button" class="btn btn-primary bi bi-box-arrow-in-right">
+          Primário
+        </button>
+      </main>
+      <nav class="">
+      </nav>
     </div>
-
-    <hr />
-
-    <p class="bg-primary text-white m-0 p-0">
-      Fundo de destaque primário com fonte branca
-    </p>
-
-    <p class="bg-success text-white m-1 p-0">
-      Fundo de destaque de sucesso com fonte branca
-    </p>
-
-    <p class="bg-danger text-white my-3 p-5">
-      Fundo de destaque de perigo com fonte branca
-    </p>
-
-    <hr />
-
-    <div class="border border-danger container">
-
-      <p>
-        Cor padrão (<code>.text-body</code>.)
-        <a href="#">Link</a>.
-      </p>
-      <p class="text-body">
-        Cor padrão (<code class="text-reset">.text-body</code>.)
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-
-      <hr />
-
-      <p class="text-primary">
-        text-primary (<code class="text-reset">text-primary</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-secondary">
-        text-secondary (<code class="text-reset">text-secondary</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-success">
-        text-success (<code class="text-reset">text-success</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-danger">
-        text-danger (<code class="text-reset">text-danger</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-warning">
-        text-warning (<code class="text-reset">text-warning</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-info">
-        text-info (<code class="text-reset">text-info</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-
-      <hr />
-
-      <p class="text-light bg-dark">
-        text-light (<code class="text-reset">text-light</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-dark">
-        text-dark (<code class="text-reset">text-dark</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-body">
-        text-body (<code class="text-reset">text-body</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-muted">
-        text-muted (<code class="text-reset">text-muted</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-white bg-dark">
-        text-white (<code class="text-reset">text-white</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-black-50">
-        text-black-50 (<code class="text-reset">text-black-50</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-      <p class="text-white-50 bg-dark">
-        text-white-50 (<code class="text-reset">text-white-50</code>).
-        <a class="text-reset" href="#">Link</a>.
-      </p>
-
-    </div>
-
-    <hr />
-
-    <div class="border border-danger container">
-      Container comum (igual ao <code>.container-sm</code>).
-    </div>
-
-    <div class="border border-danger container-sm">
-      100% até atingir <code>sm</code> (≥576px), quando trava em 540px.
-      <br />
-      Para telas <code>md</code> e maiores, igual <code>.container-md</code>
-    </div>
-
-    <div class="border border-danger container-md">
-      100% até atingir <code>md</code> (≥768px), quando trava em 720px.
-      <br />
-      Para telas <code>lg</code> e maiores, igual <code>.container-lg</code>
-    </div>
-
-    <div class="border border-danger container-lg">
-      100% até atingir <code>lg</code> (≥992px), quando trava em 960px.
-      <br />
-      Para telas <code>xl</code> e maiores, igual <code>.container-xl</code>
-    </div>
-
-    <div class="border border-danger container-xl">
-      100% até atingir <code>xl</code> (≥1200px), quando trava em 1140px.
-      <br />
-      Após isso, não aumenta mais de tamanho de container para telas maiores.
-    </div>
-
-    <div class="border border-danger container-fluid">
-      Container fluido (100% de largura para qualquer tela).
-    </div>
-
+    <footer>
+    </footer>
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 </body>
 
