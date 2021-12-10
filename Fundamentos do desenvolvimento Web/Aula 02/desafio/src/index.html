@@ -6,23 +6,52 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <title>Desafio Aula 02</title>
 </head>
 
 <body>
   <div class="d-flex flex-column min-vh-100 min-vw-100">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand mx-auto">Logo</a>
+      <div id="navbarPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Item 1</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Item 2</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Item 3</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="container-fluid text-center mt-1 p-3 bg-info text-light">
       <h1>Seletor de cor</h1>
       <p>Informe o nome ou código da cor no campo abaixo para obter uma preview</p>
     </div>
-    <div class="d-flex w-100">
-      <div class="row px-5 py-3">
-          <input class="col-12 col-sm-6 mr-1" type="text" placeholder="Nome ou código da cor..." />
-          <button type="submit" class="btn col-12 col-sm-5 ml-1 bg-primary text-light">Visualizar</button>
+    <main class="d-flex align-items-center flex-grow-1">
+      <div class="container w-100">
+        <div class="row px-5 py-3">
+          <input class="col-12 col-sm-6 mb-1 mb-sm-0 mr-sm-1" type="text" placeholder="Nome ou código da cor..." />
+          <button type="submit" class="btn col-12 col-sm-5 mt-1 mt-sm-0 ml-sm-1 bg-primary text-light">
+            <i class=" mr-1 bi bi-eye-fill"></i>
+            Visualizar
+          </button>
         </div>
       </div>
-    </div>
+    </main>
+    <footer class="d-flex bg-light justify-content-center bg-secondary">
+      <text class="h4 text-black-50">Copyright © Kauan Polydoro</text>
+    </footer>
   </div>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/popper.js/dist/popper.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
