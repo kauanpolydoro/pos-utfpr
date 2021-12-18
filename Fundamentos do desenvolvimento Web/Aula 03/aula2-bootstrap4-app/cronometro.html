@@ -1,0 +1,97 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Aula 02</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">Logo</a>
+      <div id="navbarPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Seletor de cor</a>
+          </li>
+          <li class="nav-item active">
+            <a href="contador.html" class="nav-link">Contador</a>
+          </li>
+          <li class="nav-item active">
+            <a href="cronometro.html" class="nav-link">Cronômetro</a>
+          </li>
+          <li class="nav-item">
+            <a href="todo.html" class="nav-link">To-do list</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="flex-grow-1 mt-3">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">Cronômetro</h1>
+          <p class="lead">
+            Utilize os botões abaixo para cronometrar o tempo de um evento.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 my-2 my-sm-0">
+            <button id="start" type="button" class="btn btn-block btn-success">
+              <i class="bi bi-play-circle"></i>
+              Start
+            </button>
+          </div>
+          <div class="col-sm-4 my-2 my-sm-0">
+            <button id="stop" type="button" class="btn btn-block btn-warning">
+              <i class="bi bi-pause-circle"></i>
+              Stop
+            </button>
+          </div>
+          <div class="col-sm-4 my-2 my-sm-0">
+            <button id="restart" type="button" class="btn btn-block btn-danger">
+              <i class="bi bi-stop-circle"></i>
+              Restart
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center mt-5">
+            <output class="display-1 font-weight-bold">
+              0.0
+            </output>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Copyright &copy; 2021 Kauan Polydoro
+    </footer>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/popper.js/dist/popper.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cronometro.js"></script>
+</body>
+
+</html>
