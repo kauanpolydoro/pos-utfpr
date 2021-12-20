@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Aula 02</title>
+  <title>Aula 03</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,14 +26,17 @@
       <a href="#" class="navbar-brand">Logo</a>
       <div id="navbarPrincipal" class="collapse navbar-collapse">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a href="index.html" class="nav-link">Seletor de cor</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a href="contador.html" class="nav-link">Contador</a>
           </li>
           <li class="nav-item">
             <a href="cronometro.html" class="nav-link">Cronômetro</a>
+          </li>
+          <li class="nav-item">
+            <a href="todo.html" class="nav-link">To-do list</a>
           </li>
         </ul>
       </div>
@@ -41,35 +44,25 @@
     <main class="flex-grow-1 mt-3">
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-4">Contador</h1>
+          <h1 class="display-4">Seletor de cor</h1>
           <p class="lead">
-            Utilize os botões abaixo para registrar uma contagem.
+            Informe o nome ou código da cor no campo abaixo para obter um preview
           </p>
         </div>
       </div>
-      <div class="container">
+      <form class="container">
         <div class="row">
-          <div class="col">
-            <button type="button" class="btn btn-block btn-danger">
-              <i class=" mr-1 bi bi-dash-circle-fill"></i>
-              1
-            </button>
+          <div class="col-sm-6">
+            <input autofocus type="text" class="form-control text-center" placeholder="Nome ou código da cor">
           </div>
-          <div class="col">
-            <button type="button" class="btn btn-block btn-success">
-              <i class=" mr-1 bi bi-plus-circle-fill"></i>
-              1
+          <div class="col-sm-6">
+            <button id="btn-submit" type="submit" class="form-control btn btn-primary">
+              <i class=" mr-1 bi bi-eye-fill"></i>
+              Visualizar
             </button>
           </div>
         </div>
-        <div class="row">
-          <div class="col text-center mt-5">
-            <output class="display-1 font-weight-bold">
-              0
-            </output>
-          </div>
-        </div>
-      </div>
+      </form>
     </main>
     <footer>
       Copyright &copy; 2021 Kauan Polydoro
@@ -82,7 +75,7 @@
   <script src="node_modules/popper.js/dist/popper.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/contador.js"></script>
+  <script src="js/seletor-cor.js"></script>
 </body>
 
 </html>

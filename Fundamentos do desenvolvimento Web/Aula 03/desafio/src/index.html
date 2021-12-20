@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <title>Desafio Aula 03</title>
+</head>
+
+<body>
+  <div class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarPrincipal">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="#" class="navbar-brand">Logo</a>
+      <div id="navbarPrincipal" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Seletor de cor</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Contador</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Cronômetro</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">To-do list</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Contagem regressiva</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="flex-grow-1 mt-3">
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-4">Contagem regressiva</h1>
+          <p class="lead">
+            Informe uma data futura para que o cronômetro comece a contar regressivamente.
+          </p>
+        </div>
+      </div>
+      <div class="container mb-4">
+        <div class="row">
+          <form class="col-6">
+            <div class="form-group">
+              <label for="date-input">Data</label>
+              <input class="form-control" type="datetime-local" name="date" id="date-input">
+              <small id="date-input" class="form-text text-muted">Escolha uma data futura</small>
+            </div>
+          </form>
+          <button type="submit" class="col-2 my-4 btn btn-primary">Alterar data</button>
+        </div>
+        <hr />
+        <div class="row text-center">
+          <div class="col text-center">
+            <p>Dias</p>
+            <div id="days" class="border display-4">0</div>
+          </div>
+          <div class="col text-center">
+            <p>Horas</p>
+            <div id="hours" class="border display-4">0</div>
+          </div>
+          <div class="col text-center">
+            <p>Minutos</p>
+            <div id="minutes" class="border display-4">0</div>
+          </div>
+          <div class="col text-center">
+            <p>Segundos</p>
+            <div id="seconds" class="border display-4">0</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="d-flex bg-light justify-content-center bg-secondary">
+      <text class="h4 text-black-50">Copyright &copy; Kauan Polydoro</text>
+    </footer>
+  </div>
+
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
